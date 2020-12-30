@@ -1,6 +1,8 @@
 Mcl:E3Ran#->A:Lbl 0:Isz C:?->B:B<A=>"+"▄B>A=>"-"▄B≠A=>Goto 0:C
 
-Variables:
-* A: secret number to guess
-* B: player guess
-* C: number of guesses
+▄ = display black triangle
+
+List of variables:
+  A: secret number to guess
+  B: player guess
+  C: number of guesses
