@@ -1,6 +1,6 @@
-Mcl:Range 0,1,5,0,1,5:.1->I:Ran#/9->J:1->E:Ran#->F:F->P:Lbl 0:Cls:Plot 0,1:Plot 1,1:Line:
-Plot 1,P-I:Plot 1,P+I:Line:-I->I:Lbl 1:E+I->E:F+J->F:Plot E,F:F<=0=>-J->J:F>=1=>-J->J:
-Frac E≠0=>Goto 1:E=1=>Goto 2:?->P:Goto 0:Lbl 2:Abs (P-F->J:J>I=>Goto 3:Isz C:Goto 0:Lbl 3:C
+Mcl:Range 0,1,5,0,1,5:.1→I:Ran#/9→J:1→E:Ran#→F:F→P:Lbl 0:Cls:Plot 0,1:Plot 1,1:Line:
+Plot 1,P-I:Plot 1,P+I:Line:-I→I:Lbl 1:E+I→E:F+J→F:Plot E,F:F≤0⇒-J->J:F≥1⇒-J->J:
+Frac E≠0⇒Goto 1:E=1⇒Goto 2:?→P:Goto 0:Lbl 2:Abs (P-F→J:J>I⇒Goto 3:Isz C:Goto 0:Lbl 3:C
 
 List of variables:
   I: ball X increment (constant = 0.1)
