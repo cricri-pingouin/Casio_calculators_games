@@ -2,13 +2,15 @@ Mcl:Range 0,1,5,0,1,5:.1->I:Ran#/9->J:1->E:Ran#->F:F->P:Lbl 0:Cls:Plot 0,1:Plot 
 Plot 1,P-I:Plot 1,P+I:Line:-I->I:Lbl 1:E+I->E:F+J->F:Plot E,F:F<=0=>-J->J:F>=1=>-J->J:
 Frac E≠0=>Goto 1:E=1=>Goto 2:?->P:Goto 0:Lbl 2:Abs (P-F->J:J>I=>Goto 3:Isz C:Goto 0:Lbl 3:C
 
-I: ball X increment (constant = 0.1)
-J: ball Y increment
-E: ball X coordinate
-F: ball Y coordinate
-P: paddle Y coordinate (X is always 1)
+List of variables:
+  I: ball X increment (constant = 0.1)
+  J: ball Y increment
+  E: ball X coordinate
+  F: ball Y coordinate
+  P: paddle Y coordinate (X is always 1)
 
-Lbl 0: draw court + racket
-Lbl 1: draw ball and check walls
-Lbl 2: check ball lands on racket
-Lbl 3: game over
+List of labels:
+  Lbl 0: draw court + racket
+  Lbl 1: draw ball and check walls
+  Lbl 2: check ball lands on racket
+  Lbl 3: game over
