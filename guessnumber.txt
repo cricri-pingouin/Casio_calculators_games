@@ -9,6 +9,6 @@ List of variables:
   B: player guess
   C: number of guesses
 
-Note:
-◢ = "stop and display" command
-E3 is equivalent to 1000x but saves 3 steps
+Notee:
+- ◢ = "stop and display" command
+- E3 is equivalent to 1000x but saves 3 steps
