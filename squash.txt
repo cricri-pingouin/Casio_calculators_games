@@ -6,8 +6,8 @@ List of variables:
   C: score
   I: ball X increment, as well as racket width (constant = 0.1)
   J: ball Y increment (start=random; upon hitting racket it becomnes offset from racket centre)
-  E: ball X coordinate (0 = racket position; 1 = end wall)
-  F: ball Y coordinate (if = 0 or 1, ball hit a wall)
+  E: ball X coordinate (0 = end wall; 1 = racket position)
+  F: ball Y coordinate (0 and 1 = side walls)
   P: paddle Y coordinate, user input (X is always 1)
 
 List of labels:
@@ -15,3 +15,9 @@ List of labels:
   Lbl 1: move/draw ball and check walls
   Lbl 2: check ball lands on racket
   Lbl 3: game over
+
+Notes:
+- when the ball reaches the end wall, the user is prompted to enter the Y co-ordinate for the racket. This should be between 0 and 1, but the program does not test-prevent entering a value outside this range. Needless to say, if you do, you will lose.
+- for the function Range, you can set Xscl and Yscl to any number higher than 1, but making it an integer saves steps. I used 5.
+- starting angle is defined by Ran#/9; you can use any number, but again, an integer saves steps. Using 9 makes it easy, using a lower integer would create a higher start "angle".
+- "Plot 0,1:Plot 1,1:Line:" is purely cosmetic so that all room walls are drawn. You could skip it to save 12 steps, but it wouldn't look as nice.
