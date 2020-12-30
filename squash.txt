@@ -1,4 +1,3 @@
-¬ = display black triangle
 <> = logical not equal
 
 Squash (164 steps):
