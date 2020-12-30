@@ -18,6 +18,6 @@ List of labels:
 
 Notes:
 - when the ball reaches the end wall, the user is prompted to enter the Y co-ordinate for the racket. This should be between 0 and 1, but the program does not test-prevent entering a value outside this range. Needless to say, if you do, you will lose.
-- for the function Range, you can set Xscl and Yscl to any number higher than 1, but making it an integer saves steps. I used 5.
+- for the function Range, you can set Xscl and Yscl to any number higher than 1, but making it an integer less than 9 saves steps. I used 5.
 - starting angle is defined by Ran#/9; you can use any number, but again, an integer saves steps. Using 9 makes it easy, using a lower integer would create a higher start "angle".
-- "Plot 0,1:Plot 1,1:Line:" is purely cosmetic so that all room walls are drawn. You could skip it to save 12 steps, but it wouldn't look as nice.
+- "Plot 0,1:Plot 1,1:Line:" is purely cosmetic so that all room walls are drawn. You could skip it to save 12 steps, but the room wouldn't look fully enclosed by both side walls.
