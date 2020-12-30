@@ -4,7 +4,7 @@ Frac E≠0⇒Goto 1:E=1⇒Goto 2:?→P:Goto 0:Lbl 2:Isz C:Abs (P-F→J:J≤I⇒G
 
 List of variables:
   C: score
-  I: ball X increment (constant = 0.1)
+  I: ball X increment, as well as racket width (constant = 0.1)
   J: ball Y increment (start=random; upon hitting racket it becomnes offset from racket centre)
   E: ball X coordinate (0 = racket position; 1 = end wall)
   F: ball Y coordinate (if = 0 or 1, ball hit a wall)
