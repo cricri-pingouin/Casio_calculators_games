@@ -1,6 +1,6 @@
 Mcl:E3Ran#→A:Lbl 0:Isz C:?→B:B<A⇒"+"◢B>A⇒"-"◢B≠A⇒Goto 0:C
 
-Or if you don't want to use Mcl which clears all variables:
+Or if you don't want to use Mcl which clears all variables, initialise C (costs 2 extra steps):
 
 0→C:E3Ran#→A:Lbl 0:Isz C:?→B:B<A⇒"+"◢B>A⇒"-"◢B≠A⇒Goto 0:C
 
