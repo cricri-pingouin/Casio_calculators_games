@@ -5,13 +5,13 @@ Frac E≠0⇒Goto 1:E=1⇒Goto 2:?→P:Goto 0:Lbl 2:Abs (P-F→J:J>I⇒Goto 3:Is
 List of variables:
   C: score
   I: ball X increment (constant = 0.1)
-  J: ball Y increment
-  E: ball X coordinate
-  F: ball Y coordinate
-  P: paddle Y coordinate (X is always 1)
+  J: ball Y increment (start=random; upon hitting racket it becomnes offset from racket centre)
+  E: ball X coordinate (0 = racket position; 1 = end wall)
+  F: ball Y coordinate (if = 0 or 1, ball hit a wall)
+  P: paddle Y coordinate, user input (X is always 1)
 
 List of labels:
   Lbl 0: draw court + racket
-  Lbl 1: draw ball and check walls
+  Lbl 1: move/draw ball and check walls
   Lbl 2: check ball lands on racket
   Lbl 3: game over
