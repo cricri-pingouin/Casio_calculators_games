@@ -1,9 +1,6 @@
-▄ = display black triangle
-
-Guess the number (42 steps):
----------------------------
 Mcl:E3Ran#->A:Lbl 0:Isz C:?->B:B<A=>"+"▄B>A=>"-"▄B≠A=>Goto 0:C
 
-A: secret number to guess
-B: player guess
-C: number of guesses
+Variables:
+* A: secret number to guess
+* B: player guess
+* C: number of guesses
